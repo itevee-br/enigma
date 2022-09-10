@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ultimo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 class="l1">agora o mais dificil</h1>
+    <h1 class="l2">o ultimo desafio</h1>
+    <h1 class="l3">está preparado?</h1>
+    <h2 class="l4">'1' + '1'</h2>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin: 60px auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 60px auto;
+            font-family: sans-serif;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            margin: 60px auto;
+            font-family: sans-serif;
+        }
+        .resposta{
+            opacity: 50%;
+        }
+        .secreto{
+            color: black;
+        }
+        @keyframes aparecer {
+            from {
+                opacity: 0%;
+            }
+            to {
+                opacity: 100%;
+            }
+        }
+        .l1{
+            opacity: 0%;
+            animation-name: aparecer;
+            animation-duration: 1.5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+        .l2{
+            opacity: 0%;
+            animation-name: aparecer;
+            animation-duration: 1.5s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+        .l3{
+            opacity: 0%;
+            animation-name: aparecer;
+            animation-duration: 1.5s;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+        }
+        .l4{
+            opacity: 0%;
+            animation-name: aparecer;
+            animation-duration: 1.5s;
+            animation-delay: 7s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</body>
+</html>

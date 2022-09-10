@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <code><h1 id="digitando">Tentando estabilizar contato.           .           .                    Você deve gostar de enigmas certo?                                        Eu tenho alguns para você...           Escreva teste no lugar de coloque-sua-resposta-aqui-em-minusculo para começar               , ao todo são 15 enigmas.                                                Ao iniciar você concorda com os termos e condições.</h1></code>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: darkgreen;
+            max-width: 500px;
+            text-align: center;
+            margin: 60px auto;
+            font: Courier;
+        }
+        #digitando::after {
+            content: '|';
+            opacity: 1;
+            margin-left: 5px;
+            display: inline-block;
+            animation: blink .7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% {
+            opacity: 1;
+            }
+            50% {
+            opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = '';
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 75 * i);
+          });
+        }
+      
+        const titulo = document.querySelector('#digitando');
+        typeWriter(titulo);
+      </script>
+</body>
+</html>
